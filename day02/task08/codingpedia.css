@@ -1,0 +1,54 @@
+.box {
+  border-radius: 2px;
+  border: solid;
+  border-color: black;
+  margin: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: white;
+  border-radius: 5px; /* Optional: add border-radius for rounded corners */
+}
+.section {
+  display: flex;
+  width: 100%;
+}
+main {
+  flex: 8;
+}
+aside {
+  flex: 2;
+}
+body {
+  background-color: grey;
+}
+
+.square {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: absolute;
+  animation: squareAnimation 1s ease-in-out infinite;
+}
+
+@keyframes squareAnimation {
+  0% {
+    transform: translateY(0) translateX(0);
+    background-color: red;
+  }
+  25% {
+    transform: translateY(300px) translateX(0);
+    background-color: green;
+  }
+  50% {
+    transform: translateY(300px) translateX(300px);
+    background-color: blue;
+  }
+  75% {
+    transform: translateY(0) translateX(300px);
+    background-color: yellow;
+  }
+  100% {
+    transform: translateY(0) translateX(0);
+    background-color: red;
+  }
+}

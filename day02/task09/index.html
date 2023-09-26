@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="codingpedia.css" />
+    <title>CodingPedia</title>
+  </head>
+
+  <body>
+    <div class="square"></div>
+    <header class="container">
+      <h1>Welcome to CodingPedia!</h1>
+      <nav class="boxnav">
+        <a href="index.html">Index</a>
+        <a href="php.html">PHP</a>
+        <a href="sql.html">SQL</a>
+      </nav>
+    </header>
+    <div class="section">
+      <main class="box">
+        <p class="box">
+          CodingPedia is a collective encyclopedia project on the Internet
+          aiming to be universal and multi - lingual which functions as a wiki .
+          CodingPedia has for goal to offer freely reusable objective and
+          verifiable content that anyone can modify and improve .
+        </p>
+        <article>
+          <form class="box">
+            <label for="name">Enter your name :</label>
+            <input type="text" name="name" id="name" required />
+
+            <label for="firstname">Enter your Firstname :</label>
+            <input type="text" name="firstname" id="firstname" required />
+
+            <label for="email">Enter your Email :</label>
+            <input type="email" name="email" id="email" required />
+
+            <label for="age">Enter your age :</label>
+            <input
+              type="number"
+              id="age"
+              name="age"
+              value="22"
+              min="3"
+              max="99"
+            />
+
+            <label for="phone">Enter your Phone number :</label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+              maxlength="10"
+            />
+
+            <label>Choose your sex:</label>
+            <div class="formulaire">
+              <input type="radio" name="sex" id="male" value="male" />
+              <label for="male">Male</label>
+
+              <input type="radio" name="sex" id="female" value="female" />
+              <label for="female">Female</label>
+
+              <input type="radio" name="sex" id="other" value="other" />
+              <label for="other">Other</label>
+            </div>
+
+            <label for="haircolor">Choose your hair color :</label>
+            <input
+              type="color"
+              id="haircolor"
+              name="haircolor"
+              value="#e66465"
+            />
+
+            <label for="date">Enter the date :</label>
+            <input
+              type="date"
+              id="date"
+              name="date"
+              required
+              value="2023-09-25"
+            />
+
+            <label>Choose your Technology :</label>
+            <select>
+              <option value="php">PHP</option>
+              <option value="html">HTML</option>
+              <option value="SQL">sql</option>
+            </select>
+
+            <label for="date">Enter your question :</label>
+            <textarea id="question" name="question" rows="5" cols="33" required>
+            </textarea>
+
+            <input type="submit" value="Envoyer la question" />
+          </form>
+        </article>
+      </main>
+      <aside class="box">
+        <p>This is an introduction of myself</p>
+      </aside>
+    </div>
+    <footer class="box footer">
+      <address>name first name address tel</address>
+    </footer>
+  </body>
+</html>

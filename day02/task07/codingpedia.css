@@ -1,0 +1,23 @@
+.box {
+  border-radius: 2px;
+  border: solid;
+  border-color: black;
+  margin: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: white;
+  border-radius: 5px; /* Optional: add border-radius for rounded corners */
+}
+.section {
+  display: flex;
+  width: 100%;
+}
+main {
+  flex: 8;
+}
+aside {
+  flex: 2;
+}
+body {
+  background-color: grey;
+}
